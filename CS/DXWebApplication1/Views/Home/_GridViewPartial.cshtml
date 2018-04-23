@@ -1,0 +1,42 @@
+@Html.DevExpress().GridView(settings => {
+    settings.Name = "gridView";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "GridViewPartial" };
+    settings.KeyFieldName = "ProductID";
+
+    settings.SettingsBehavior.AllowFocusedRow = true;
+    settings.SettingsBehavior.ProcessFocusedRowChangedOnServer = true;
+    settings.SettingsBehavior.AllowSort = false;
+    settings.SettingsPager.Mode = GridViewPagerMode.ShowAllRecords;
+
+    settings.Columns.Add("ProductID");
+    settings.Columns.Add("ProductName");
+    settings.Columns.Add("UnitPrice");
+    settings.Columns.Add(column => {
+        column.FieldName = "DisplayIndex";
+        column.Visible = false;
+        column.SortOrder = ColumnSortOrder.Ascending;
+    });
+
+    settings.ClientSideEvents.Init = "gridView_Init";
+    settings.ClientSideEvents.EndCallback = "gridView_EndCallback";
+    settings.Styles.Row.CssClass = "draggable";
+
+    settings.CustomJSProperties = (s, e) => {
+        var gridView = (MVCxGridView)s;
+        gridView.JSProperties["cpbtMoveUp_Enabled"] = gridView.FocusedRowIndex > 0;
+        gridView.JSProperties["cpbtMoveDown_Enabled"] = gridView.FocusedRowIndex < (gridView.VisibleRowCount - 1);
+    };
+    settings.HtmlRowPrepared = (s, e) => {
+        if (e.RowType == GridViewRowType.Data) {
+            object displayIndex = e.GetValue("DisplayIndex");
+            if (displayIndex != null)
+                e.Row.Attributes.Add("displayIndex", displayIndex.ToString());
+        }
+    };
+    settings.BeforeGetCallbackResult = (s, e) => {
+        if (ViewBag.VisibleIndex == null)
+            return;
+        var gridView = (MVCxGridView)s;
+        gridView.FocusedRowIndex = ViewBag.VisibleIndex;
+    };
+}).Bind(Model).GetHtml()
