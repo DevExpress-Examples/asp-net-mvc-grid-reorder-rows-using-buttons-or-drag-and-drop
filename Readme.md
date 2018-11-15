@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[HomeController.cs](./CS/DXWebApplication1/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/DXWebApplication1/Controllers/HomeController.vb))**
+* [DBHelper.cs](./CS/DXWebApplication1/Models/DBHelper.cs) (VB: [DBHelper.vb](./VB/DXWebApplication1/Models/DBHelper.vb))
+* [_GridViewPartial.cshtml](./CS/DXWebApplication1/Views/Home/_GridViewPartial.cshtml)
+* [Index.cshtml](./CS/DXWebApplication1/Views/Home/Index.cshtml)
+<!-- default file list end -->
 # How to reorder GridView rows using buttons or drag-and-drop
 
 
