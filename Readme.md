@@ -7,6 +7,9 @@
 * [Index.cshtml](./CS/DXWebApplication1/Views/Home/Index.cshtml)
 <!-- default file list end -->
 # How to reorder GridView rows using buttons or drag-and-drop
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t191258)**
+<!-- run online end -->
 
 
 This example demonstrates how to move GridView rows using buttons or jQuery UI  <a href="http://jqueryui.com/draggable/">Draggable</a> and <a href="http://jqueryui.com/droppable/">Droppable</a> plug-ins. To keep the order of rows, it is necessary to set up an extra column to store row order indexes. Then, sort GridView by this column and deny sorting by other columns.<br>
