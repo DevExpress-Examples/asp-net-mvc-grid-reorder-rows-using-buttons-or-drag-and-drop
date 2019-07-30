@@ -8,7 +8,7 @@
 <!-- default file list end -->
 # How to reorder GridView rows using buttons or drag-and-drop
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t191258)**
+**[[Run Online]](https://codecentral.devexpress.com/t191258/)**
 <!-- run online end -->
 
 
