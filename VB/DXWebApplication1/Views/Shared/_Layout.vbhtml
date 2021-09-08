@@ -14,7 +14,7 @@
         New StyleSheet With {.ExtensionSuite = ExtensionSuite.Spreadsheet},
         New StyleSheet With {.ExtensionSuite = ExtensionSuite.Scheduler},
         New StyleSheet With {.ExtensionSuite = ExtensionSuite.Report})
-    )
+
     @Html.DevExpress().GetScripts(
         New Script With {.ExtensionSuite = ExtensionSuite.GridView},
         New Script With {.ExtensionSuite = ExtensionSuite.PivotGrid},
@@ -25,6 +25,11 @@
         New Script With {.ExtensionSuite = ExtensionSuite.Spreadsheet},
         New Script With {.ExtensionSuite = ExtensionSuite.Scheduler},
         New Script With {.ExtensionSuite = ExtensionSuite.Report})
+
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
 </head>
 
 <body>
