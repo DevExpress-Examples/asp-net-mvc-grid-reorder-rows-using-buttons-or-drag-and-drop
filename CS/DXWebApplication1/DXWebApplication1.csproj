@@ -183,6 +183,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\NORTHWND.MDF" />
+    <Content Include="App_Data\NORTHWND_log.ldf" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Models\NwindDataClasses.dbml">
@@ -227,7 +229,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <PropertyGroup>
