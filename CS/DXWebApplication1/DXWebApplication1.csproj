@@ -184,9 +184,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\NORTHWND.MDF" />
-    <Content Include="App_Data\NORTHWND_log.ldf">
-      <DependentUpon>NORTHWND.MDF</DependentUpon>
-    </Content>
+    <Content Include="App_Data\NORTHWND_log.ldf" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Models\NwindDataClasses.dbml">
