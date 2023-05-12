@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # Grid View for ASP.NET MVC - Reorder grid rows using buttons and drag-and-drop
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t191258/)**
+**[[Run Online]](https://codecentral.devexpress.com/128551862/)**
 <!-- run online end -->
 
 This example demonstrates how to use buttons and jQuery drag-and-drop functionality to reorder grid rows.
