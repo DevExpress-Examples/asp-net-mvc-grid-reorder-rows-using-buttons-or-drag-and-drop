@@ -96,7 +96,7 @@ To enable jQuery drag-and-drop functionality, add a jQuery UI component to your 
 
 * [Grid View for ASP.NET Web Forms - Reorder grid rows using buttons and drag-and-drop](https://github.com/DevExpress-Examples/asp-net-web-forms-grid-reorder-rows-using-buttons-or-drag-and-drop)
 <!-- feedback -->
-## Does This Example Address Your Development Requirements/Objectives?
+## Does this example address your development requirements/objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-mvc-grid-reorder-rows-using-buttons-or-drag-and-drop&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-mvc-grid-reorder-rows-using-buttons-or-drag-and-drop&~~~was_helpful=no)
 
